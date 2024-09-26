@@ -58,7 +58,7 @@ Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal
 
 Este comando instala as dependências/bibliotecas, descritas no arquivo `requirements.txt`.
 
-Para executar a API basta executar:
+Para executar a API precisa estar na pasta `api` e executar:
 
 ```
 (env)$ flask run --host 0.0.0.0 --port 5000

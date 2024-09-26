@@ -21,7 +21,7 @@ const getList = async () => {
         item.beds,
         item.availability_365,
         item.region,
-        item.outcome
+        item.outcome.toFixed(2)
       ));
     })
     .catch((error) => {
