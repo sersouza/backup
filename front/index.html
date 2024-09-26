@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>AI Airbnb RJ Predict System</title>
+    <link rel="icon" href="img/home_logo.jpeg" type="image/png">
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Bem-Vindo ao AI Airbnb RJ Predict System</h2>
+            <br>
+            <p>Este sistema foi desenvolvido para auxiliar um proprietário de imóvel do RJ saber o preço diário médio a ser cobrado no Airbnb.</p>
+            <p>Para isso, basta preencher os campos abaixo com os dados do imóvel e clicar em "Calcular preço".</p>
+        </div>
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+     
+    <section class="newItem">
+        <input type="text" id="newOwnerName" placeholder="Nome do proprietário">
+        <input type="number" id="newBath" placeholder="Bathrooms">
+        <input type="number" id="newBedroom" placeholder="Bedrooms">
+        <input type="number" id="newAccom" placeholder="Accommodates">
+        <input type="number" id="newBeds" placeholder="Beds">
+        <input type="number" id="newAval" placeholder="Availability_365">
+        <!-- Updated Region input to a select dropdown -->
+        <select id="newRegion">
+            <option value="">Select Region</option>
+            <option value="barra_da_tijuca">Barra da Tijuca</option>
+            <option value="botafogo">Botafogo</option>
+            <option value="camorim">Camorim</option>
+            <option value="catete">Catete</option>
+            <option value="centro">Centro</option>
+            <option value="copacabana">Copacabana</option>
+            <option value="flamengo">Flamengo</option>
+            <option value="gavea">Gávea</option>
+            <option value="gloria">Glória</option>
+            <option value="humaita">Humaitá</option>
+            <option value="ipanema">Ipanema</option>
+            <option value="jacarepagua">Jacarepaguá</option>
+            <option value="jardim_botanico">Jardim Botânico</option>
+            <option value="lagoa">Lagoa</option>
+            <option value="laranjeiras">Laranjeiras</option>
+            <option value="leblon">Leblon</option>
+            <option value="leme">Leme</option>
+            <option value="recreio_dos_bandeirantes">Recreio dos Bandeirantes</option>
+            <option value="santa_teresa">Santa Teresa</option>
+            <option value="sao_conrado">São Conrado</option>
+            <option value="tijuca">Tijuca</option>
+            <option value="vidigal">Vidigal</option>
+        </select>
+        <span onclick="newItem()" class="addBtn">Calcular preço</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome do proprietário</th>
+                <th>Bathrooms</th>
+                <th>Bedrooms</th>
+                <th>Accommodates</th>
+                <th>Beds</th>
+                <th>Availability_365</th>
+                <th>Region</th>
+                <th>Price (U$$)</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15" height="15"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
